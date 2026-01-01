@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-image: radial-gradient(
+    circle farthest-corner at -6.3% 49.8%,
+    rgba(238, 17, 17, 1) 0.1%,
+    rgba(238, 17, 17, 1) 8.5%,
+    rgba(31, 11, 214, 1) 100.2%
+  );
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.box {
+  width: 750px;
+  height: 400px;
+  display: flex;
+  box-shadow: 3px 5px 20px beige;
+  transition: all 1s linear;
+}
+.box:hover {
+  transform: scale(1.04, 1.04);
+}
+.rightbox img {
+  height: 397px;
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.rightbox img:hover {
+  transform: scale(1.02, 1.02);
+}
+.leftbox {
+  width: 70%;
+  color: rgb(217, 215, 215);
+  background-color: rgb(96, 5, 96);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.leftbox p {
+  font-size: 0.8rem;
+}
+.users-count {
+  display: flex;
+  gap: 55px;
+}
+@media screen and (max-width: 760px) {
+  .box {
+    width: 700px;
+  }
+  .leftbox h1 {
+    font-size: 1.7rem;
+  }
+  .rightbox img {
+    width: 350px;
+  }
+  .users-count {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .box {
+    width: 600px;
+    height: 350px;
+  }
+  .leftbox h1 {
+    font-size: 1.4rem;
+  }
+  .leftbox {
+    padding: 25px;
+  }
+  .rightbox img {
+    width: 300px;
+    height: 347px;
+  }
+  .users-count {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .box {
+    width: 550px;
+    height: 300px;
+  }
+  .leftbox h1 {
+    font-size: 1.4rem;
+  }
+  .leftbox {
+    padding: 15px;
+  }
+  .rightbox img {
+    width: 270px;
+    height: 297px;
+  }
+  .users-count {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .box {
+    width: 450px;
+    height: 230px;
+  }
+  .leftbox h1,
+  h3 {
+    font-size: 1rem;
+  }
+  .leftbox p {
+    font-size: 0.6rem;
+  }
+  .leftbox {
+    padding: 15px;
+    gap: 35px;
+  }
+  .rightbox img {
+    width: 220px;
+    height: 227px;
+  }
+  .users-count {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .box {
+    width: 350px;
+    height: 160px;
+    position: relative;
+    bottom: 100px;
+  }
+  .leftbox h1,
+  h3 {
+    font-size: 0.8rem;
+  }
+  .leftbox p {
+    font-size: 0.4rem;
+  }
+  .leftbox {
+    padding: 10px;
+    gap: 20px;
+  }
+  .rightbox img {
+    width: 165px;
+    height: 158px;
+  }
+  .users-count {
+    gap: 30px;
+  }
+}
